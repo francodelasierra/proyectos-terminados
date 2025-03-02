@@ -173,8 +173,8 @@ main {
 .card-content {
     padding: 20px;
     background-color: rgba(0, 0, 0, 0.6); /* Fondo semitransparente para el texto */
-    color: white;
-    border-radius: 0 0 20px 20px; /* Bordes redondeados en la parte inferior */
+    color: #f5f5f5; 
+     border-radius: 0 0 20px 20px; /* Bordes redondeados en la parte inferior */
     display: flex;
     flex-direction: column; /* Asegura que el contenido esté bien alineado */
     justify-content: space-between; /* Espaciado entre el título, la descripción y el enlace */
