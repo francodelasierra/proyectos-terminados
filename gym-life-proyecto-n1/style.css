@@ -1,0 +1,445 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ============================
+   Estilo para el contenedor del header
+   ============================ */
+
+   header {
+    display: flex;
+    justify-content: space-between; /* Alinea el logo a la izquierda y los enlaces a la derecha */
+    align-items: center; /* Centra verticalmente los elementos */
+    padding: 10px 20px; /* Añade espaciado */
+    color: white; /* Color del texto */
+}
+
+/* ============================
+   Estilo para el logo
+   ============================ */
+
+#logo img {
+    height: 70px; /* Ajusta el tamaño del logo */
+    width: auto;  /* Mantiene las proporciones de la imagen */
+    transition: transform 0.3s ease, filter 0.3s ease; /* Efecto de transición para hover */
+}
+
+/* Efecto de hover en el logo */
+#logo a:hover img {
+    transform: scale(1.1);  /* Aumenta el tamaño del logo */
+    filter: brightness(1.1); /* Hace el logo un poco más brillante */
+}
+
+/* ============================
+   Estilo para la barra de navegación
+   ============================ */
+
+header nav {
+    display: flex;
+    justify-content: center; /* Centra los enlaces en el espacio disponible */
+    flex-grow: 1; /* Hace que el nav ocupe el espacio restante */
+    padding: 10px 20px; /* Añade espaciado */
+    align-items: center; /* Centra verticalmente los elementos */
+}
+
+/* ============================
+   Estilo para la lista de enlaces
+   ============================ */
+
+header nav ul {
+    display: flex; /* Muestra los elementos de la lista en fila */
+    list-style: none; /* Elimina los puntos de lista */
+    padding: 0; /* Elimina padding */
+    margin: 0; /* Elimina márgenes */
+}
+
+/* ============================
+   Estilo para los elementos de la lista
+   ============================ */
+
+header nav ul li {
+    text-align: center; /* Centra el texto dentro de cada li */
+    font-family: "kanit", sans-serif;
+}
+
+/* ============================
+   Estilo para los enlaces de la barra de navegación
+   ============================ */
+
+header nav ul li a {
+    margin-bottom: 30px; /* Espacio en la parte inferior de cada enlace */
+    color: whitesmoke; /* Color del texto */
+    font-size: 20px; /* Tamaño del texto */
+    text-decoration: none; /* Elimina el subrayado */
+    padding: 10px 20px; /* Espaciado alrededor de los enlaces */
+    border: 2px solid transparent; /* Borde invisible por defecto */
+    transition: border-color 0.3s, color 0.3s; /* Transición suave para el borde y color */
+}
+
+/* ============================
+   Efecto hover en los enlaces
+   ============================ */
+
+header nav ul li a:hover {
+    color: #ff6347; /* Cambia el color al pasar el ratón */
+    border-color: #ff6347; /* Añade borde cuando el ratón pasa sobre el enlace */
+}
+
+
+
+body{
+    background-image: url("img/suplementacion.jpg");
+    background-size: cover; /* Esto hará que la imagen cubra toda la pantalla */
+    background-position: center; /* Centra la imagen */
+    background-attachment: fixed; /* Hace que la imagen se quede fija mientras haces scroll */
+}
+main {
+    margin-top: 100px;
+    flex: 1; /* Hace que el main crezca para ocupar el espacio disponible */
+    padding: 20px;
+   
+}
+
+/*titulo y sub index*/
+    #titulo ,#subtitulo{
+        font-size: 60px;
+        font-family:"kanit",sans-serif;
+        text-align: center;
+        text-decoration: none;
+        margin-top: auto;
+        color:whitesmoke
+        
+        
+
+    }
+    
+
+    /* Estilo para la sección "Quiénes Somos" */
+.quienes-somos {
+    font-size: 20px;
+    color: whitesmoke; /* Asegura que el texto sea visible */
+    line-height: 1.6;
+    text-align: justify; /* Justifica el texto para un formato más profesional */
+    padding: 20px; /* Espaciado alrededor del texto */
+    margin: 0 auto; /* Centra el texto en la página */
+    max-width: 900px; /* Limita el ancho máximo del texto */
+}
+
+
+
+
+/* Estilo general de las tarjetas */
+.card-section {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    width: 100%;
+}
+
+/* Estilo general de las tarjetas */
+.card-section {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    width: 100%;
+    align-items: flex-start;  /* Alinea las tarjetas a la izquierda */
+}
+
+/* Estilo para la tarjeta */
+.card {
+    width: 100%;
+    max-width: 400px; /* El tamaño máximo de las tarjetas */
+    height: auto; /* Ajusta la altura de la tarjeta en función del contenido */
+    border-radius: 20px; /* Bordes redondeados */
+    overflow: hidden; /* Asegura que la imagen no se desborde */
+    background-color: #fff; /* Fondo blanco */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    margin-bottom: 20px; /* Espacio entre tarjetas */
+    /* Eliminar los márgenes auto para que las tarjetas no se centren */
+}
+
+/* Imagen dentro de la tarjeta */
+.card img {
+    width: 100%;
+    height: 100%; /* Ajusta la altura de las imágenes */
+    object-fit: cover; /* Hace que la imagen cubra todo el contenedor */
+    object-position: center; /* Centra la imagen */
+    border-radius: 20px 20px 0 0; /* Bordes redondeados en la parte superior */
+}
+
+/* Contenido dentro de la tarjeta */
+.card-content {
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6); /* Fondo semitransparente para el texto */
+    color: white;
+    border-radius: 0 0 20px 20px; /* Bordes redondeados en la parte inferior */
+    display: flex;
+    flex-direction: column; /* Asegura que el contenido esté bien alineado */
+    justify-content: space-between; /* Espaciado entre el título, la descripción y el enlace */
+    height: 100%; /* Esto asegura que el contenido se distribuya correctamente */
+    width: 100%;
+}   
+
+/* Título dentro de la tarjeta */
+.card-name {
+    font-size: 1.5rem;
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+/* Descripción dentro de la tarjeta */
+.card-description {
+    font-size: 1rem;
+    line-height: 1.4;
+    margin-bottom: 20px;
+    color: #e0e0e0;
+    font-size: 18px;
+}
+
+/* Estilo para el enlace de 'Leer más' */
+.card-link {
+    display: inline-block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Hover del enlace "Leer más" */
+.card-link:hover {
+    color: #FFD700; /* Color dorado al hacer hover */
+}
+
+
+
+    /*precios*/
+
+   .titulo-plan{
+    color: #fff;
+    text-align: center;
+    font-size: 50px;
+
+   }
+    /* Estilo para el contenedor de los planes de precios */
+.pricing-plans {
+    display: flex;
+    justify-content: space-between; /* Espacia los planes de manera uniforme */
+    align-items: flex-start; /* Alinea los elementos al inicio */
+    gap: 20px; /* Espaciado entre los planes */
+    margin: 20px auto; /* Centra el contenedor y agrega margen */
+    max-width: 1200px; /* Ancho máximo para evitar que se extienda demasiado */
+    flex-wrap: wrap; /* Permite que los planes se ajusten en pantallas pequeñas */
+}
+
+/* Estilo para cada plan */
+.plan {
+    flex: 1; /* Asegura que los planes tengan el mismo ancho */
+    max-width: 350px; /* Tamaño máximo de cada tarjeta */
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    padding: 20px;
+    text-align: center;
+}
+
+/* Título de cada plan */
+.plan h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Precio dentro del plan */
+.plan .price {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #ff6347;
+}
+
+/* Lista de beneficios */
+.plan ul {
+    
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    text-align: left; /* Alinea el texto a la izquierda */
+}
+
+/* Beneficios individuales */
+.plan ul li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Botón de suscripción */
+.plan button {
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.plan button:hover {
+    background-color: #e5533b; /* Cambia el color al pasar el ratón */
+}
+
+
+
+
+
+
+    /*contacto*/
+    /* Estilos generales para el formulario */
+/* Estilos generales para el formulario */
+
+
+.titulo-seccion-contacto {
+    font-size: 30px;
+    font-family: "Kanit", sans-serif;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 20px; 
+    padding: 20px 0; 
+    color: whitesmoke;
+}
+
+.description-contact {
+    font-size: 20px;
+    font-family: "Kanit", sans-serif;
+    text-align: center;
+    padding: 10px 0; 
+    margin: 10px auto; 
+    color: whitesmoke;
+    max-width: 600px; 
+}
+   
+
+        
+.contact-form {
+ 
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f7f7f7;  /* Fondo gris claro para el formulario */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para el título del formulario */
+.contact-form h1 {
+    font-family: "Arial", sans-serif;
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Estilo para las etiquetas */
+.contact-form label {
+    display: block;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+/* Estilo para los campos de entrada (text, email) y textarea */
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    background-color: #e0e0e0; /* Fondo gris claro en los campos */
+    border: 1px solid #ccc; /* Borde gris claro */
+    border-radius: 4px;
+    font-size: 1rem;
+    font-family: "Arial", sans-serif;
+    transition: border-color 0.3s ease;
+}
+
+/* Estilo para los campos al recibir el foco */
+.contact-form input[type="text"]:focus,
+.contact-form input[type="email"]:focus,
+.contact-form textarea:focus {
+    border-color: #007bff; /* Cambia el borde a azul */
+    background-color: #fff; /* Fondo blanco cuando se enfoca */
+    outline: none; /* Elimina el borde predeterminado de enfoque */
+}
+
+/* Estilo para el botón */
+.contact-form button {
+    width: 100%;
+    padding: 12px;
+    background-color:grey;
+    color: #fff;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color:beige /* Cambia a un tono más oscuro al pasar el ratón */
+}
+
+/* Estilo de validación */
+.contact-form input:invalid,
+.contact-form textarea:invalid {
+    border-color:whitesmoke;
+}
+
+/* Estilo cuando un campo es válido */
+.contact-form input:valid,
+.contact-form textarea:valid {
+    border-color: #2ecc71;
+}
+
+footer {
+    margin: 0;
+    margin-top: auto; /* Asegura que el footer se pegue al final del contenido */
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: black;
+    color: white;
+}
+
+/* Estilo para la sección de derechos en el footer */
+.derechos-footer {
+    display: flex;
+    flex-direction: column; /* Los textos se apilan verticalmente */
+    align-items: center; /* Centra los textos dentro de la sección */
+    gap: 20px; /* Añade espacio entre los dos párrafos */
+    flex-grow: 1; /* Permite que la sección ocupe el centro del footer */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 17px;
+}
+
+  .social-icons {
+    display: flex;
+    gap: 15px; /* Espaciado entre los íconos */
+  }
+  .social-icons a {
+    font-size: 25px; }
+  
+
+
+  .social-icons a:hover {
+    color: #ccc; /* Efecto al pasar el ratón sobre los íconos */
+  }
+    
+
+
+
+
+
+
